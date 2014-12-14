@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/orange_color"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_bg">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/film"
+            android:scaleType="fitCenter"
+            android:id="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/playTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play"
+            android:textSize="40sp"
+            android:textColor="@color/orange_color"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_gray_custom"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp">
+
+            <TextView
+                android:paddingLeft="5dp"
+                android:paddingBottom="3dp"
+                android:id="@+id/title"
+                android:text="Title"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/releaseDate"
+                android:paddingLeft="5dp"
+                android:paddingBottom="3dp"
+                android:text="Date"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Likes"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue_color"
+                android:layout_below="@+id/title"
+                android:layout_toLeftOf="@+id/dislikesView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/likesView" />
+
+            <TextView
+                android:text="Dislikes"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:textColor="@color/orange_color"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/views"
+                android:id="@+id/dislikesView" />
+
+            <TextView
+                android:text="Count"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/views" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

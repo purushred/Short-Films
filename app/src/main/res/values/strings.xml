@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Telugu Short Films</string>
+    <string name="like">&#xf164;</string>
+    <string name="dislike">&#xf165;</string>
+    <string name="view">&#xf06e;</string>
+    <string name="no_network_connection_str">No Network Connection.</string>
+    <string name="refresh_str">&#xf021;</string>
+    <string name="about">About App</string>
+    <string name="play">&#xf16a;</string>
+    <string name="share_str">I just installed Telugu Short Films on my Android, it\'s cool app watch telugu shorts films. Try it! https://play.google.com/store/apps/details?id=com.smart.shortfilms</string>
+    <string name="share_heading_str">Telugu Short Films App!</string>
+    <string name="search_title">Search</string>
+    <string-array name="spinner_array">
+        <item>By Date</item>
+        <item>By Views</item>
+        <item>By Likes</item>
+        <item>By DisLikes</item>
+    </string-array>
+</resources>
